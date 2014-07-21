@@ -1,0 +1,6 @@
+<p>Welcome User index </p>
+<%=link_to "sign_out user", destroy_user_session_path%>
+<%=link_to "Edit Profile", edit_user_registration_path%>
+<%unless current_user.facebook_token.nil?%>
+<%=link_to "Post Picture and Text", new_image_path%>
+<%end%>
